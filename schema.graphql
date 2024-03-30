@@ -1,0 +1,33 @@
+type User {
+  userId: ID!
+  userType: String!
+  userName: String!
+  userEmail: String!
+}
+
+type Classroom {
+  classroomId: ID!
+  tutorId: ID!
+  className: String!
+}
+
+type File {
+  fileId: ID!
+  fileName: String!
+  fileDescription: String
+  uploadedAt: String!
+  uploadedBy: ID!
+  fileType: String!
+  classroomId: ID!
+}
+
+type Query {
+  getUser(userId: ID!): User
+  getClassroomsByTutor(tutorId: ID!): [Classroom]
+  getFilesByClassroom(classroomId: ID!): [File]
+}
+
+type Mutation {
+  addUserToClassroom(classroomId: ID!, userId: ID!): String
+  createFile(classroomId: ID!, fileName: String!, fileType: String!): String
+}
