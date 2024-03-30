@@ -1,5 +1,3 @@
-// classroomController.js
-
 const db = require('../config/database');
 
 // Controller methods
