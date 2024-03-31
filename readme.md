@@ -10,6 +10,10 @@ This system allows students and tutors to communicate through files. It has the 
 - File type can be Image, Audio, Video or URL.
 - Students must be able to view files.
 
+## UML Diagram
+![UML Diagram](https://github.com/SuhailAnsariRepo/b03-cf/blob/main/classfilesuml.png)
+
+
 ## Database Schema
 
 The SQL tables for users, classrooms, and files are structured as follows:
